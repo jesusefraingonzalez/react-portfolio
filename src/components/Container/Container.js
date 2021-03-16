@@ -1,9 +1,13 @@
-import React from 'react';
+import { React, Component } from 'react';
 
-class Container {
-    
+class Container extends Component {
+
     render() {
-        <h1>Hello</h1>
+        return (
+            <div className="container">
+
+            </div>
+        );
     }
 }
 
