@@ -12,11 +12,32 @@ class Portfolio extends Component {
         this.setState({
             projects: [
                 {
-                    title: '',
-                    link: '',
-                    source: '',
-                    image: '',
-                    alt: '',
+                    title: 'Happy Trees',
+                    link: 'https://guarded-ravine-40907.herokuapp.com/',
+                    source: 'https://github.com/jesusefraingonzalez/happy-trees/',
+                    image: './images/happy-tree-logo.jpg',
+                    alt: 'Happy Tree Logo',
+                },
+                {
+                    title: 'Password Generator',
+                    link: 'https://jesusefraingonzalez.github.io/password-generator/',
+                    source: 'https://github.com/jesusefraingonzalez/password-generator/',
+                    image: './images/password.png',
+                    alt: 'Password Generator',
+                },
+                {
+                    title: 'Weather App',
+                    link: 'https://jesusefraingonzalez.github.io/weather-app',
+                    source: 'https://github.com/jesusefraingonzalez/weather-app/',
+                    image: './images/weather.png',
+                    alt: 'Weather App',
+                },
+                {
+                    title: 'BrewFinder',
+                    link: 'https://jesusefraingonzalez.github.io/brewfinder/',
+                    source: 'https://github.com/jesusefraingonzalez/brewfinder/',
+                    image: './images/brewfinder.png',
+                    alt: 'Brewfinder',
                 }
             ]
         })
