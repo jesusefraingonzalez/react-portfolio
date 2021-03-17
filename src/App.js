@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
+import Container from './components/Container/Container';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio'
@@ -15,13 +16,19 @@ function App() {
       <Header />
       <Switch>
         <Route exact path={["/", "/index.html", "/about"]}>
-          <About />
+          <Container>
+            <About />
+          </Container>
         </Route>
         <Route exact path="/contact.html">
-          <Contact />
+          <Container>
+            <Contact />
+          </Container>
         </Route>
         <Route exact path="/portfolio.html">
-          <Portfolio />
+          <Container>
+            <Portfolio />
+          </Container>
         </Route>
       </Switch>
       <Footer />
