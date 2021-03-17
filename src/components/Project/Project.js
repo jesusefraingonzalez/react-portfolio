@@ -1,15 +1,27 @@
 import { React, Component } from 'react';
 
 class Project extends Component {
+    state = {
+        title: '',
+        link: '',
+        source: '',
+        image: '',
+        alt: '',
+    }
+
+    componentDidMount() {
+        this.setState(this.props.project);
+    }
+
     render() {
         return (
             <>
                 <div className="card">
-                    <h2>Happy Trees</h2>
-                    <a href="https://guarded-ravine-40907.herokuapp.com/" target="_blank" >
-                        <img src="./images/happy-tree-logo.jpg" alt="Happy Trees App" style="max-width:500px; height: auto;" className="m-3"></img>
+                    <h2>{this.state.title}</h2>
+                    <a href={this.state.link} target="_blank" rel="noreferrer" >
+                        <img src={this.state.image} alt={this.state.alt} style={{ maxWidth: 500 }} className="m-3"></img>
                     </a>
-                    <a href="https://github.com/jesusefraingonzalez/happy-trees/" target="_blank">Source Code</a>
+                    <a href={this.state.source} target="_blank" rel="noreferrer">Source Code</a>
                 </div>
             </>
         )
